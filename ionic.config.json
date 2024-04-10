@@ -1,0 +1,8 @@
+{
+  "name": "CarPlace",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "03214fb2"
+}
