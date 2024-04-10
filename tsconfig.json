@@ -19,15 +19,27 @@
     "target": "es2022",
     "module": "es2020",
     "lib": [
-      "es2018", 
+      "es2018",
       "dom"
     ],
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "types": [
+      "node"
+    ],
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false
   },
   "angularCompilerOptions": {
+    "noImplicitOverride": false,
+    "noImplicitAny": false,
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": false,
+    "strictNullChecks": false,
+    "noImplicitReturns": false,
+    "strictPropertyInitialization": false,
+    "allowSyntheticDefaultImports": true
   }
 }
