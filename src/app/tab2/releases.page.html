@@ -29,7 +29,12 @@
 
         <div class="div-card-header">
             <ion-card-content>
-                Data: {{ lancamento.data }}
+               <span>
+                   Data: {{ lancamento.data  | date:'dd/MM/yyyy' }}<br>
+               </span>
+                <span>
+                    Corretora: {{ lancamento.corretoraOrBanco }}
+                </span>
             </ion-card-content>
             <div class="div-badage-card">
                 <ion-fab-button slot="end" class="fab-button-card" (click)="onClickTrash(lancamento)">

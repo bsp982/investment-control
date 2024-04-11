@@ -1,6 +1,6 @@
 .div-toolbar {
-  //display: flex;
-  //justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
   .div-ion-fab-button-title {
     margin-right: 15px;
@@ -29,7 +29,6 @@
     .fab-button-card {
       width: 35px;
       height: 35px;
-      margin-top: 12px
     }
   }
 }
