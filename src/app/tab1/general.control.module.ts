@@ -2,20 +2,19 @@ import {IonicModule} from '@ionic/angular';
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
-import {Tab1Page} from './tab1.page';
-
-import {Tab1PageRoutingModule} from './tab1-routing.module';
+import {GeneralControlPage} from './general.control.page';
 import {CanvasJSAngularChartsModule} from "@canvasjs/angular-charts";
+import {GeneralControlRoutingModule} from "./general.control.routing.module";
 
 @NgModule({
     imports: [
         IonicModule,
         CommonModule,
         FormsModule,
-        Tab1PageRoutingModule,
+        GeneralControlRoutingModule,
         CanvasJSAngularChartsModule
     ],
-    declarations: [Tab1Page]
+    declarations: [GeneralControlPage]
 })
-export class Tab1PageModule {
+export class GeneralControlModule {
 }

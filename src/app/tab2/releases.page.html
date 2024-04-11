@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <div class="div-toolbar">
+            <ion-title>
+                Investimentos
+            </ion-title>
+            <div class="div-ion-fab-button-title">
+                <ion-fab-button slot="end" class="fab-button-title" (click)="onClickPlusRelease()">
+                    <ion-icon name="add-sharp"></ion-icon>
+                </ion-fab-button>
+            </div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <ion-card *ngFor="let lancamento of listaInvestimentos; index as i; first as isFirst">
+        <div class="div-card-header">
+            <div>
+                <ion-card-header>
+                    <ion-card-title>{{ lancamento.tipoAtivo }}</ion-card-title>
+                </ion-card-header>
+            </div>
+            <div class="div-badage-card">
+                <ion-badge slot="end">R${{ lancamento.valor }},00</ion-badge>
+            </div>
+        </div>
+
+        <div class="div-card-header">
+            <ion-card-content>
+                Data: {{ lancamento.data }}
+            </ion-card-content>
+            <div class="div-badage-card">
+                <ion-fab-button slot="end" class="fab-button-card" (click)="onClickTrash(lancamento)">
+                    <ion-icon name="trash-sharp"></ion-icon>
+                </ion-fab-button>
+            </div>
+        </div>
+    </ion-card>
+
+
+</ion-content>

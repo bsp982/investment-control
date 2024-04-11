@@ -4,49 +4,44 @@ import {TipoAtivoEnum} from "../model/TipoAtivoEnum";
 
 @Component({
     selector: 'app-tab1',
-    templateUrl: 'tab1.page.html',
-    styleUrls: ['tab1.page.scss']
+    templateUrl: 'general.control.page.html',
+    styleUrls: ['general.control.page.scss']
 })
-export class Tab1Page {
+export class GeneralControlPage {
     listaInvestimentos: Investimento[] = [
         {
             id: 1,
             data: new Date(),
             tipoAtivo: TipoAtivoEnum.ACAO,
-            corretoraOrBanco: "Corretora XYZ",
-            ativo: "XYZ123",
+            corretoraOrBanco: "Rico",
             valor: 10
         },
         {
             id: 1,
             data: new Date(),
             tipoAtivo: TipoAtivoEnum.FII,
-            corretoraOrBanco: "Corretora XYZ",
-            ativo: "XYZ123",
+            corretoraOrBanco: "Rico",
             valor: 20
         },
         {
             id: 1,
             data: new Date(),
             tipoAtivo: TipoAtivoEnum.CRIPITO,
-            corretoraOrBanco: "Corretora XYZ",
-            ativo: "XYZ123",
+            corretoraOrBanco: "Binance",
             valor: 10
         },
         {
             id: 1,
             data: new Date(),
             tipoAtivo: TipoAtivoEnum.ETF_EXTERIOR,
-            corretoraOrBanco: "Corretora XYZ",
-            ativo: "XYZ123",
+            corretoraOrBanco: "Nomad",
             valor: 50
         },
         {
             id: 1,
             data: new Date(),
             tipoAtivo: TipoAtivoEnum.STOCKS,
-            corretoraOrBanco: "Corretora XYZ",
-            ativo: "XYZ123",
+            corretoraOrBanco: "Nomad",
             valor: 10
         }
     ]

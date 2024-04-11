@@ -4,50 +4,45 @@ import {TipoAtivoEnum} from "../model/TipoAtivoEnum";
 
 @Component({
     selector: 'app-tab2',
-    templateUrl: 'tab2.page.html',
-    styleUrls: ['tab2.page.scss']
+    templateUrl: 'releases.page.html',
+    styleUrls: ['releases.page.scss']
 })
-export class Tab2Page {
+export class ReleasesPage {
 
     listaInvestimentos: Investimento[] = [
         {
             id: 1,
             data: new Date(),
             tipoAtivo: TipoAtivoEnum.ACAO,
-            corretoraOrBanco: "Corretora XYZ",
-            ativo: "XYZ123",
+            corretoraOrBanco: "Rico",
             valor: 10
         },
         {
             id: 1,
             data: new Date(),
             tipoAtivo: TipoAtivoEnum.FII,
-            corretoraOrBanco: "Corretora XYZ",
-            ativo: "XYZ123",
+            corretoraOrBanco: "Rico",
             valor: 20
         },
         {
             id: 1,
             data: new Date(),
             tipoAtivo: TipoAtivoEnum.CRIPITO,
-            corretoraOrBanco: "Corretora XYZ",
-            ativo: "XYZ123",
+            corretoraOrBanco: "Binance",
             valor: 10
         },
         {
             id: 1,
             data: new Date(),
             tipoAtivo: TipoAtivoEnum.ETF_EXTERIOR,
-            corretoraOrBanco: "Corretora XYZ",
-            ativo: "XYZ123",
+            corretoraOrBanco: "Nomad",
             valor: 50
         },
         {
             id: 1,
             data: new Date(),
             tipoAtivo: TipoAtivoEnum.STOCKS,
-            corretoraOrBanco: "Corretora XYZ",
-            ativo: "XYZ123",
+            corretoraOrBanco: "Nomad",
             valor: 10
         }
     ]
@@ -55,4 +50,13 @@ export class Tab2Page {
     constructor() {
     }
 
+    onClickTrash(lancamento: Investimento) {
+        //TODO colocar um alert to confirm
+        this.listaInvestimentos.splice(this.listaInvestimentos.indexOf(lancamento), 1);
+    }
+
+    onClickPlusRelease() {
+        console.log('Evento chegando')
+        //Todo implementar new Release modal
+    }
 }

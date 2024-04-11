@@ -1,0 +1,36 @@
+.div-toolbar {
+  //display: flex;
+  //justify-content: space-between;
+
+  .div-ion-fab-button-title {
+    margin-right: 15px;
+
+    .fab-button-title{
+      width: 35px; height: 35px
+    }
+  }
+}
+
+
+.div-card-header {
+  display: flex;
+  justify-content: space-between;
+
+  .div-badage-card {
+    display: flex;
+    align-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin-right: 10px;
+
+
+    .fab-button-card {
+      width: 35px;
+      height: 35px;
+      margin-top: 12px
+    }
+  }
+}
+
