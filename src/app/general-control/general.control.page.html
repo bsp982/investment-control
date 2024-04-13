@@ -1,0 +1,43 @@
+<ion-header mode="ios">
+    <ion-toolbar class="ion-toolbar">
+        <ion-title>
+            Controle Geral
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div>
+        <canvasjs-chart [options]="chartOptions"></canvasjs-chart>
+    </div>
+
+    <div>
+        <ion-card *ngFor="let lancamento of cardInvestListVO; index as i;">
+            <div class="div-card-header">
+                <div>
+                    <ion-card-header>
+                        <ion-card-title>{{ lancamento.tipoAtivo }}</ion-card-title>
+                    </ion-card-header>
+                </div>
+                <div class="div-badage-card">
+                    <ion-badge slot="end">R${{ lancamento.valor }},00</ion-badge>
+                </div>
+            </div>
+        </ion-card>
+    </div>
+
+    <ion-card>
+        <div class="div-card-header">
+            <div>
+                <ion-card-header>
+                    <ion-card-title>Total</ion-card-title>
+                </ion-card-header>
+            </div>
+            <div class="div-badage-card">
+                <ion-badge slot="end">R${{ getSomaTotal(cardInvestListVO) }},00</ion-badge>
+            </div>
+        </div>
+    </ion-card>
+
+
+</ion-content>

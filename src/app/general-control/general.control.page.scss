@@ -1,0 +1,18 @@
+.ion-toolbar {
+  background-color: #70c770;
+}
+
+.div-card-header {
+  display: flex;
+  justify-content: space-between;
+
+  .div-badage-card {
+    display: flex;
+    align-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin-right: 10px;
+  }
+}
