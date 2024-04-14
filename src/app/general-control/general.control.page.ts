@@ -4,7 +4,7 @@ import {CardInvestVO} from "../model/vo/cardInvestVO";
 import {Investimento} from "../model/investimento";
 
 @Component({
-    selector: 'app-tab1',
+    selector: 'app-general-control-page',
     templateUrl: 'general.control.page.html',
     styleUrls: ['general.control.page.scss']
 })
@@ -41,9 +41,6 @@ export class GeneralControlPage {
         };
 
         this.cardInvestListVO = calcularTotalPorTipoAtivo(releases);
-        console.log(this.cardInvestListVO);
-
-
     }
 
     private getDataPointsChart() {

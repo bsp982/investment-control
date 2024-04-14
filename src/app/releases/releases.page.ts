@@ -5,7 +5,7 @@ import {AlertController} from "@ionic/angular";
 import {AlertUtil} from "../utils/AlertUtil";
 
 @Component({
-    selector: 'app-tab2',
+    selector: 'app-releases-page',
     templateUrl: 'releases.page.html',
     styleUrls: ['releases.page.scss']
 })
